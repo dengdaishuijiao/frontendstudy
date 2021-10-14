@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* float: left; */
+            /* 使用浮动，盒子并不会压住后面的段落盒子。p标签会在div右边显示。 */
+            position: absolute;
+            /* 使用脱标的定位会影响后面内容 */
+            width: 100px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">123</div>
+    <p>长风破浪会有时，直挂云帆济沧海。</p>
+</body>
+
+</html>

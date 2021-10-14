@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子居中</title>
+    <style>
+        .box {
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+            /* 使盒子居中，用绝对定位到50%，盒子左上角在居中处。再通过margin移动盒子位置 */
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* margin: auto; */
+            /* 在不使用定位时，盒子可以通过marginauto来实现居中 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
