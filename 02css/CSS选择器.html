@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        /* 想要将ol里所有标签颜色改为蓝色，但是不修改ul里面的 */
+        /* 后代选择器，父元素 子元素｛样式｝ */
+        /* 后代选择器的子元素不仅仅可以是儿子，也可以是孙子等等后代，只要子元素包含在父元素内即可 */
+        ol li {
+            color: blue;
+        }
+
+        ul a {
+            color: yellowgreen;
+            text-decoration: none;
+        }
+
+        .end li {
+            color: pink;
+        }
+
+        .nav>a {
+            color: greenyellow;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">我是ul的孙子</a></li>
+    </ul>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+    </ol>
+    <ul class="end">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">我是ul的孙子</a></li>
+    </ul>
+    <div class="nav">
+        <a href="#">这是div标签的儿子</a>
+        <p>
+            <a href="#">这是div标签的孙子</a> <br>
+            这也是div标签的儿子
+        </p>
+    </div>
+
+</body>
+
+</html>

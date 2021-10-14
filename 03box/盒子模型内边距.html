@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内边距</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 5px solid pink;
+            /* 此时盒子的宽度为300+5*2=310px */
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-right: 20px;
+            /* 使用padding后，盒子变大，再之前的宽度310+20+20=350px */
+        }
+
+        .nav {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>盒子内容是content盒子内容是content盒子内容是content</div>
+    <div class="nav">盒子内容是content盒子内容是content盒子内容是content</div>
+</body>
+
+</html>

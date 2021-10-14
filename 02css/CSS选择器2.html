@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器2</title>
+    <style>
+        /* 要求：1把熊大和熊二改为粉色 */
+        /* 并集选择器，表示和 */
+        div,
+        p {
+            color: pink;
+        }
+
+        /* 要求2：把熊大和熊二改为粉色，小猪改为粉色 */
+        div,
+        p,
+        .pig li {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bear">熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>佩奇</li>
+        <li>乔治</li>
+    </ul>
+</body>
+
+</html>
